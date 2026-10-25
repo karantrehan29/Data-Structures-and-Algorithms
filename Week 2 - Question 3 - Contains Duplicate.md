@@ -1,4 +1,4 @@
-# Week 1 — Question 3: Contains Duplicate
+# Week 2 — Question 3: Contains Duplicate
 
 ## Problem
 

@@ -1,4 +1,4 @@
-# Week 1 — Question 5: Valid Anagram
+# Week 2 — Question 2: Valid Anagram
 
 ## Problem
 
@@ -51,15 +51,15 @@ public boolean isAnagram(String s, String t) {
     for(int i=0; i<n; i++)
     {
         char c = s.charAt(i);
-        frequency[c - 'a']++; 
+        frequency[c - 'a']++;
     }
 
     for(int i=0; i<n; i++)
     {
         char c = t.charAt(i);
-        frequency[c - 'a']--; 
+        frequency[c - 'a']--;
     }
-    
+
     for(int freq: frequency)
     {
         if(freq != 0) return false;

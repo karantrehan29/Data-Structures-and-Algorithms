@@ -1,4 +1,4 @@
-# Week 1 — Question 4: Move Zeroes
+# Week 1 — Question 6: Move Zeroes
 
 ## Problem
 

@@ -45,7 +45,6 @@ Output: [0, 1]
 
 ```java
 public int[] twoSum(int[] nums, int target) {
-    // Your solution
     
     Map<Integer, Integer> frequency = new HashMap<>();
 

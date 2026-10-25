@@ -40,6 +40,30 @@ Output: false
 
 ```java
 public boolean isAnagram(String s, String t) {
-    // Your solution
+
+    if (s.length() != t.length()) {
+        return false;
+    }
+
+    int[] frequency = new int[26];
+    int n = s.length();
+
+    for(int i=0; i<n; i++)
+    {
+        char c = s.charAt(i);
+        frequency[c - 'a']++; 
+    }
+
+    for(int i=0; i<n; i++)
+    {
+        char c = t.charAt(i);
+        frequency[c - 'a']--; 
+    }
+    
+    for(int freq: frequency)
+    {
+        if(freq != 0) return false;
+    }
+    return true;
 }
 ```

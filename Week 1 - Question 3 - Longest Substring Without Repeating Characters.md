@@ -37,5 +37,7 @@ Explanation: "wke" is a valid substring. "pwke" is not contiguous.
 ## Java method signature
 
 ```java
-public int lengthOfLongestSubstring(String s);
+public int lengthOfLongestSubstring(String s) {
+    // Code here
+}
 ```

@@ -33,5 +33,7 @@ Output: [0, 0, 9, 0, 0]
 ## Java method signature
 
 ```java
-public int[] productExceptSelf(int[] nums);
+public int[] productExceptSelf(int[] nums) {
+    // Code here
+}
 ```

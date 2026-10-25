@@ -36,5 +36,7 @@ Output: [[0, 0, 0]]
 ## Java method signature
 
 ```java
-public List<List<Integer>> threeSum(int[] nums);
+public List<List<Integer>> threeSum(int[] nums) {
+    // Code here
+}
 ```

@@ -32,5 +32,7 @@ Output: [1]
 ## Java method signature
 
 ```java
-public int[] topKFrequent(int[] nums, int k);
+public int[] topKFrequent(int[] nums, int k) {
+    // Code here
+}
 ```

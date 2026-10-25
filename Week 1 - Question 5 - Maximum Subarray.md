@@ -36,5 +36,7 @@ Output: 23
 ## Java method signature
 
 ```java
-public int maxSubArray(int[] nums);
+public int maxSubArray(int[] nums) {
+    // Code here
+}
 ```

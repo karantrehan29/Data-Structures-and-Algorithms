@@ -36,5 +36,7 @@ Output: [["a"]]
 ## Java method signature
 
 ```java
-public List<List<String>> groupAnagrams(String[] strs);
+public List<List<String>> groupAnagrams(String[] strs) {
+    // Code here
+}
 ```

@@ -39,5 +39,22 @@ Explanation: "wke" is a valid substring. "pwke" is not contiguous.
 ```java
 public int lengthOfLongestSubstring(String s) {
     // Code here
+    Map<Character, Integer> lastSeen = new HashMap<>();
+    
+    int left = 0;
+    int right = 0;
+    int longestLength = 0;
+
+    for(char c : s.toCharArray())
+    {
+        if(lastSeen.containsKey(c))
+        {
+            left = Math.max(left, lastSeen.get(c) + 1);
+        }
+        longestLength = Math.max(longestLength, right - left + 1);
+        lastSeen.put(c,right);
+        right++;
+    }
+    return longestLength;
 }
 ```

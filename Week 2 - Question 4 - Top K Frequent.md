@@ -33,6 +33,26 @@ Output: [1]
 
 ```java
 public int[] topKFrequent(int[] nums, int k) {
-    // Code here
+
+    int[] result = new int[k];
+    PriorityQueue<Map.Entry<Integer, Integer>> queue = new PriorityQueue<>((q1,q2) -> Integer.compare(q2.getValue(), q1.getValue()));
+    Map<Integer, Integer> frequency = new HashMap<>();
+
+    for(int num: nums)
+    {
+        frequency.put(num, frequency.getOrDefault(num,0) + 1);
+    }
+
+    for(Map.Entry<Integer, Integer> entry: frequency.entrySet())
+    {
+        queue.offer(entry);
+    }
+
+    for(int i=0; i<k; i++)
+    {
+        result[i] = queue.poll().getKey();
+    }
+
+    return result;
 }
 ```
